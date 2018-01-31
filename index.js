@@ -1,2 +1,2 @@
 
-window.Acme = module.exports = require('./src/acme.js');
+window.Coyote = module.exports = require('./src/coyote.js');
