@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Acme.js</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style type="text/css">
+  #log {
+    /* width: 100vw; */
+    height: 30vh;
+    overflow: auto;
+  }
+  </style>
+</head>
+<body>
+  <div class="bg-dark text-white text-center">
+    <div class="container p-3">
+      <h2>Coyote.js</h2>
+      <p>
+        An pure javascript Acme client for the Let's Encrypt CA.
+      </p>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-3">
+        <form onsubmit="start(event)">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="email" class="form-control" value="info@example.org" />
+          </div>
+          <div class="form-group">
+            <label>Domain</label>
+            <input type="text" id="domain" class="form-control" value="www.example.org" />
+          </div>
+          <button class="btn btn-primary">Generate Key</button>
+        </form>
+      </div>
+      <div class="col">
+        <pre class="bg-light border p-2" id="log"></pre>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../../dist/acme.js"></script>
+  <script src="./example.js"></script>
+</body>
+</html>

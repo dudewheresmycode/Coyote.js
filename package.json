@@ -1,0 +1,25 @@
+{
+  "name": "coyote.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "node-forge": "^0.7.1",
+    "superagent": "^3.8.2",
+    "underscore": "^1.8.3"
+  },
+  "browser": {
+    "crypto": false,
+    "process": false
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.2.0"
+  }
+}
